@@ -1,0 +1,604 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<title> Perky Pretzel </title>
+	<meta charset="utf-8">
+	<meta name="description" content="Perky Pretzels Food Truck offers a variety of delicous homemade pretzels! ">
+	<meta name="keywords" content="Pretzels, Food Truck, Washington D.C, Cinnamon Pretzel, Salt Pretzel, Food, Snacks">
+	<meta name="author" content="Sara Hurtado">
+	<meta name="viewport" content="width=device-width, initial scale=1.0">
+	<meta http-equiv="refresh" content="6000">
+	<link rel="icon" href="Images/PerkyPretzelLogo.png">
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Gloock&family=Metal+Mania&family=Prompt&family=Raleway:wght@200&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amatic+SC&display=swap" rel="stylesheet">
+<style>
+
+* {
+	margin: 0px;
+	padding:0px;
+	}
+
+body {
+	background-color: #FF7D00;
+	font-family: 'Amatic SC';
+	}
+	
+header {
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	position: relative;
+	}
+
+.bigbox {
+	background-color: #174C4F;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+  z-index: 999;
+	}
+nav {
+	font-family: 'Amatic SC';
+	font-size: 24px;
+	color: #FF7D00;
+	top: 0px;
+	}
+	
+nav a{
+	text-decoration: none;
+    	font-size: 45px;
+	font-family: 'Amatic SC';
+    	font-weight: bold;
+	color: #FF7D00;
+	align-items: center;
+	justify-content: center;
+	display: inline;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	}	
+	
+nav a:link{
+    	color: #FF7D00;
+    }
+
+nav a:hover {
+    	color: white;
+ 	transition: all ease 1.5s;
+   	 }
+    
+nav a:active {
+   	 color: gold;
+    	}
+    
+a {	text-decoration: none;
+}
+
+.first {
+	display: flex;
+	position: relative;
+	top: 50px;
+	margin-left: 150px;
+	margin-right: 0px;
+	justify-content: space-between;
+	width: 100%;
+	}
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            right: 0;
+            transform: translate(0, -50%);
+            background-color: #f2f2f2;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+        }
+
+        .popup h3 {
+            margin-top: 0;
+        }
+
+        .popup p {
+            margin-bottom: 0;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+
+.banner {
+	position: relative;
+	top: 50px; 
+	}
+	
+.top {
+	background-color: white;
+	color: #FF7D00;
+	text-align: center;
+	justify-content: center;
+	display: flex;
+	font-size: 40px;
+	height: 50px;
+	
+	}
+
+.menu {
+	position: relative;
+	top: 120px;
+	}
+	
+.Marquee {
+	position: relative;
+	top: 1400px;
+	background-color: #174C4F;
+	height: 80px;
+	color: white;
+	font-size: 60px;
+	text-align: center;
+	vertical-align: middle;
+	}
+	
+.table {
+	position: relative;
+	top: 400px;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	}
+	
+.next {
+	position: relative;
+	top: 400px;
+	}
+	
+.bottom {
+	text-align: center;
+	}
+	
+.order {
+	position: relative;
+	top: 50px;
+	display: flex;
+	justify-content:  center;
+	
+	}
+	
+.bill {
+	position: relative;
+	top: 150px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	}
+	
+th{
+	background-color: #174C4F;
+	color: white;
+}
+
+td{
+	background-color: white;
+	color: #174C4F;
+}
+
+.bubble1, .bubble2, .bubble3, .bubble4, .bubble5 {	
+	background-color: #174C4F;
+	height: 150px;
+	width: 150px;
+	border-radius: 200px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	font-family: 'Amatic SC';
+	font-size: 100px;
+	color: #FF7D00;
+	}
+	
+.next {
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	}
+	
+.soft {
+	position: relative;
+	top: 100px;
+	text-align: center;
+	justify-content: center;
+	font-size: 25px;
+	display: block;
+	background-color: #FF7D00;
+	color: white;
+	}
+	
+.tiny {
+	position: relative;
+	top: 100px;
+	text-align: center;
+	justify-content: center;
+	font-size: 25px;
+	display: block;
+	background-color: #FF7D00;
+	color: white;
+	}
+	
+.drink {
+	position: relative;
+	top: 100px;
+	text-align: center;
+	justify-content: center;
+	font-size: 25px;
+	display: block;
+	background-color: #FF7D00;
+	color: white;
+	}
+
+.dips {
+	position: relative;
+	top: 100px;
+	text-align: center;
+	justify-content: center;
+	font-size: 25px;
+	display: block;
+	background-color: #FF7D00;
+	color: white;
+	} 
+		
+.orders {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	top: 20px;
+	width: 100%;
+	}
+	
+.submit2 {
+display: block;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	top: 180px;
+	font-size: 50px;
+	}
+
+.contact {
+	position: relative;
+	top: 500px;
+	background-color: #FF7D00;
+	}
+	
+.contactus {
+	position: relative;
+	top: 400px;
+	text-align: center;
+	justify-content: center;
+	font-size: 40px;
+	background-color: white;
+	}
+	
+footer {
+	position: relative;
+	top: 400px;
+	text-decoration: none;
+	background-color: white;
+	height: 100px;
+	text-align: center;
+	justify-content: center;
+	}
+</style>
+</head>
+<div class="top">
+<p>"The Best Pretzels in D.C" - Barack Obama</p>
+</div>
+<div class="bigbox" style="width: 100%; display: flex;">
+<header style="height: 150px; width: 30%;"> 
+	<a href="FoodTruck2.html"><img src="Images/PerkyPretzelLogo.png" height="150px" width="150px" alt="logo"></a>
+</header>
+<nav style="height: 90px; width: 70%; justify-content: center; align-items: center; display: flex;"> 
+	<a href="#home">Home</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+	<a href="#menu">Menu</a> &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+	<a href="#order">Order Now</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 
+	<a href="#schedule">Schedule</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;
+	<a href="#contact">Contact Us</a>&nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; 
+	
+</nav>
+</div>
+<body>
+ <div class="popup" id="popup-ad">
+        <span class="close-btn" onclick="closePopup()">X</span>
+        <h3 style ="color:#FF7D00;">Special Offer!</h3>
+        <p>Lets celebrate SUMMER! Buy 1 Get One Pretzel Free for any order placed June 1 - June 30! Use code <b style ="color:#FF7D00;">SUMM3R23</b> to validate purchase!</p>
+    </div>
+    <script>
+        function closePopup() {
+            var popup = document.getElementById("popup-ad");
+            popup.style.display = "none";
+        }
+    </script>
+<main>
+<div class="first" style="style="width: 100%;">
+<div  id="home" class="slogan" style="width: 50%;">
+<img src="Images/PerkyPretzelSlogan.png" alt="Perky Pretzel Slogan" height="450" width= "450" style="border-radius: 40px;">
+</div>
+<div class="about" style="width: 50%; margin: 0; margin-right: 0;">
+<img src="Images/PerkyPretzelAbtnobg.png" alt="Perky Pretzel About" height="500" width= "500" style="border-radius:40px; margin: 0;">
+</div>
+</div>
+<div id="menu" class="banner">
+<img src="Images/banner2.png" alt="Perky Pretzel Banner" height="270" width= "100%">
+</div>
+<div class="menu">
+<img src="Images/menu2.png" alt="Perky Pretzel Menu" width="100%">
+</div>
+<br>
+<div id="schedule"class="Marquee">
+<marquee direction="right" scrollamount="10" style="width: 100%; align-items: center;"> Locations!</marquee>
+</div>
+<br>
+<div class="order">
+<div id="order" class="bubble1">
+<span> O </span>
+</div>&nbsp; &nbsp;&nbsp; &nbsp;
+<div class="bubble2">
+<span> R </span>
+</div>&nbsp; &nbsp;&nbsp; &nbsp;
+<div class="bubble3">
+<span> D </span>
+</div>&nbsp; &nbsp;&nbsp; &nbsp;
+<div class="bubble4">
+<span> E </span>
+</div>&nbsp; &nbsp;&nbsp; &nbsp;
+<div class="bubble5">
+<span> R </span>
+</div>&nbsp; &nbsp;&nbsp; &nbsp;
+</div>
+
+<div class="orders">
+<div class="tiny">
+<img src="Images/dogpretzel.jpeg" alt="Pretzel " width="320px" height="270px" style="border-radius: 40px;">
+<br><br>
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST" style="background-color: #174C4F; border-radius: 40px; height: 250px; width:350px;">
+<br> 
+<h3 style="color: #FF7D00;"> Tiny Bites</h3>
+<input type="checkbox" value="yes"> Pretzel Nuggets <span style="color: #FF7D00;">- $6.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+    <input type="checkbox" value="yes"> Mini Churros <span style="color: #FF7D00;">- $6.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Pretzel Dogs <span style="color: #FF7D00;">- $6.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+ 	<input type="checkbox" value="yes"> Sweet Pretzel Bites <span style="color: #FF7D00;">- $5.50</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Savory Pretzel Bites <span style="color: #FF7D00;">- $5.50 s</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+</form>
+</div>
+<div class="soft">
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST" style="background-color: #174C4F; border-radius: 40px; height: 290px; width:350px;">
+<br> 
+<h3 style="color: #FF7D00;"> Soft Pretzels </h3>
+<input type="checkbox" value="yes"> Original <span style="color: #FF7D00;">- $7.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+    <input type="checkbox" value="yes"> Cinnamon Sugar<span style="color: #FF7D00;">- $7.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Peperoni<span style="color: #FF7D00;">- $7.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+ 	<input type="checkbox" value="yes"> Sweet Almond<span style="color: #FF7D00;">- $7.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Cream Cheese<span style="color: #FF7D00;">- $7.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Nutella Filling<span style="color: #FF7D00;">- $7.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+</form>
+<br>
+<img src="Images/softpretzel.jpeg" alt="Pretzel " width="320px" height="270px" style="border-radius: 40px;">
+</div>
+<div class="drink">
+<img src="Images/lemonade.jpeg" alt="Frozen Lemonade " width="320px" height="200px" style="border-radius: 40px;">
+<br><br><br>
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST" style="background-color: #174C4F; border-radius: 40px; height: 315px; width:350px;">
+<br> 
+<h3 style="color: #FF7D00;"> Refreshers </h3>
+<input type="checkbox" value="yes"> ICE Slushie <span style="color: #FF7D00;">- $5.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+    <input type="checkbox" value="yes"> Frozen Lemonade <span style="color: #FF7D00;">- $4.00</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Regular Lemonade<span style="color: #FF7D00;">- $2.50</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+ 	<input type="checkbox" value="yes"> Pink Lemonade <span style="color: #FF7D00;">- $2.50</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Fountain Soda <span style="color: #FF7D00;">- $2.00</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Iced Tea<span style="color: #FF7D00;">- $2.00</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+<input type="checkbox" value="yes"> Water<span style="color: #FF7D00;">- $1.50</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+</form>
+</div>
+<div class="dips">
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST"style="background-color: #174C4F; border-radius: 40px; height: 315px; width:350px;">
+<br> 
+<h3 style="color: #FF7D00;"> Dips </h3>
+<input type="checkbox" value="yes"> Cheese <span style="color: #FF7D00;">- $1.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+    <input type="checkbox" value="yes"> Nutella<span style="color: #FF7D00;">- $1.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Hot Salsa<span style="color: #FF7D00;">- $1.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+ 	<input type="checkbox" value="yes"> Marinera<span style="color: #FF7D00;">- $1.99</span>
+<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Cream Cheese<span style="color: #FF7D00;">- $1.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+	<input type="checkbox" value="yes"> Honey Mustard<span style="color: #FF7D00;">- $1.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+<br>
+<input type="checkbox" value="yes"> Butter<span style="color: #FF7D00;">- $1.99</span>
+	<input type="number" name="myChoice" id="myChoice" min="1" max="20">
+</form>
+<br>
+<img src="Images/cinnamon.jpeg" alt="Pretzel " width="320px" height="270px" style="border-radius: 40px;">
+</div>
+<br>
+</div>
+<div class="bill">
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST" style="background-color: #174C4F; ">
+<fieldset> 
+<legend style="color: #FF7D00;"> Billing Adress </legend>
+<label style="color: #FF7D00;"> Street: <input type="text" name="street" id="street" size="54"> </label> <br><br>
+<label style="color: #FF7D00;"> City: <input type="text" name="city" id="city"></label><br><br>
+<label style="color: #FF7D00;"> State: <input type="text" name="state" id="state" maxlength="15" size="5"></label><br><br>
+<label style="color: #FF7D00;"> Zip: <input type="text" name="zip" id="zip" maxlength="5" size="5"></label><br><br>
+</fieldset>
+</form>
+</div>
+<div class="submit2">
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST">
+    <input id="mySubmit" type="submit" value="Submit" tabindex="4" style="background-color: #174C4F; font-family: 'Amatic SC'; height: 60px; width: 150px; font-size: 45; border-radius: 40px; border: 0px; color: #FF7D00;">
+</form>
+</div>
+<div class="table">
+<center><h1 id="schedule" style="color: #174C4F; border-radius: 200px; background-color: white; width: 200px;"> Schedule </h1></center>
+<br>
+<center><table border="0" style="width: 600px; height: 500px; text-align: center;"> 
+<tr>
+	<th> Date </th>
+	<th> Location </th>
+	<th> Time </th>
+</tr>
+<tr>
+	<td> June 2th </td>
+	<td> Dupont Circle </td>
+	<td> 12:30pm - 6:30pm </td>
+</tr>
+<tr>
+	<td> June 5th </td>
+	<td> National Mall </td>
+	<td> 11:00am - 5:00pm </td>
+</tr>
+<tr>
+	<td> June 8th - 10th </td>
+	<td> Georgetown Waterfront </td>
+	<td> 12:15pm - 5:00pm </td>
+</tr>
+<tr>
+	<td> June 13th </td>
+	<td> Adams Morgan </td>
+	<td> 12:30pm - 4:30pm </td>
+</tr>
+<tr>
+	<td> June 16th - 18th </td>
+	<td> Bethesda </td>
+	<td> 11:45am - 5:00pm</td>
+</tr>
+<tr>
+	<td> June 23 - June 26th </td>
+	<td> Smithsonian National Zoo </td>
+	<td> 10:30am - 4:15pm </td>
+</tr>
+<tr>
+	<td> June 28 - July 3th </td>
+	<td> Chesapeake Bay </td>
+	<td> 12:30am - 5:30pm </td>
+</tr>
+<tr>
+	<td> July 5th </td>
+	<td> Fell's Point </td>
+	<td> 11:30am - 5:15pm </td>
+</tr>
+<tr>
+	<td> July 6th </td>
+	<td> National Aquarium </td>
+	<td> 10:15am - 5:30pm </td>
+</tr>
+</table></center>
+</div>
+<br>
+<div class="next">
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST" style="background-color:#174C4F; font-family: 'Amatic SC',sans-serif; padding: 10px;">
+    <fieldset>
+    <legend style="color:#FF7D00 ; border: 10px; font-size: 30px;"> Where do you want to see Perky Pretzels at next? </legend>
+<br>
+    <label style="color: #FF7D00;"> Name: </label><br>
+	<input type="text" name="myName" id="myName" tabindex="1"> <br><br>
+	<label style="color: #FF7D00;"> Date Options:</label><br>
+    <label></label><input type="date" name="myDate" id="myDate"><br><br>
+    <label style="color: #FF7D00;"> Where to Next?: </label><br>
+    <textarea type="text" name="myComments" id="myComments" rows="4" cols="25" tabindex="3"></textarea><br><br>
+    <input id="mySubmit" type="submit" value="Submit" tabindex="4" style="background-color: #FF7D00; font-family: 'Amatic SC'; height: 30px; width: 80px; font-size: 22; border-radius: 40px; border: 0px; color: white;"><br><br>
+    </fieldset>
+</form>
+</div>
+<br><br>
+<div class="contactus">
+<h1 id="contact" style="color: #FF7D00;"> Contact Us </h1>
+</div>
+<br>
+<div class="next">
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST" style="background-color:#174C4F; font-family: 'Amatic SC',sans-serif; padding: 10px;">
+    <fieldset>
+    <legend style="color:#FF7D00 ; border: 10px; font-size: 30px;"> Contact Us </legend>
+<br>
+    <label style="color: #FF7D00;"> Name: </label><br>
+	<input type="text" name="myName" id="myName" tabindex="1"> <br><br>
+	<label style="color: #FF7D00;"> Email:</label><br>
+   <input type="text" name="myName" id="myName" tabindex="1"><br><br>
+<form action="https://formsubmit.co/sarishur2008@gmail.com" method="POST">
+   <label style="color: #FF7D00;"> Reason for Contact</label><br>
+<select size="1">
+    <option> [Choose]</option>
+    <option value="Business"> Business Inquiry</option>
+    <option value="Suggestion"> Suggestion </option>
+    <option value="Review"> Review </option>
+    <option value="Question"> Question </option>
+</select>
+</form><br><br>
+    <label style="color: #FF7D00;">Message</label><br>
+    <textarea type="text" name="myComments" id="myComments" rows="4" cols="25" tabindex="3"></textarea><br><br>
+    <input id="mySubmit" type="submit" value="Submit" tabindex="4" style="background-color: #FF7D00; font-family: 'Amatic SC'; height: 30px; width: 80px; font-size: 22; border-radius: 40px; border: 0px; color: white;"><br><br>
+    </fieldset>
+</form>
+</div>
+<br>
+<footer>
+<br>
+<div class="logos">
+	<a href="https://twitter.com/" target="_blank"><img src="Images/twitterog.png" alt="Twitter Logo" height="30" width= "30"></a>&nbsp; &nbsp;
+	<a href="https://www.instagram.com/" target="_blank"><img src="Images/instagramog.png" alt="Instagram Logo" height="30" width= "30"></a>&nbsp; &nbsp;
+	<a href="https://www.tiktok.com/en/" target="_blank"><img src="Images/tiktokog.png" alt="Tik Tok Logo" height="30" width= "30"></a>&nbsp; &nbsp;
+	<a href="https://www.facebook.com/" target="_blank"><img src="Images/facebookog.png" alt="Facebook Logo" height="30" width= "30"></a> &nbsp; &nbsp;
+	<a href="mailto: perkypretzels@gmail.com"><img src="Images/emailog.png" alt="Email Logo" height="30" width= "30"></a>
+</div>
+<br>
+	<p style="color: #174C4F; font-weight: bold; font-size: 15px;"> &copy; Copyright 2023. Perky Pretzels Food Truck - All Rights Reserved.</p>
+</footer>
+</main>
+</body>
+</html> 
